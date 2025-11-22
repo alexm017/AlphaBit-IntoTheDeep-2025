@@ -45,10 +45,10 @@ public class TeleOp_IntoTheDeep extends LinearOpMode {
         intakeControl.init();
 
         while(opModeIsActive()){
-            chasis_control.Run(); // > ~10000
-            intakeControl.Run(); // > ~1000
-            armControl.Run(); // 120
-            slidersControl.Run(); // 60
+            chasis_control.Run(); 
+            intakeControl.Run(); 
+            armControl.Run(); 
+            slidersControl.Run();
             telemetrys.addData("arm has reached ref ", armControl.hasReachedReference);
             telemetrys.addData("Detected Sample Angle ", intakeControl.sampleAngle);
             telemetrys.addData("Is Sample Pick-Up Automation Disabled ", intakeControl.disableAutomatedSamplePickUp);
